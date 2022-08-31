@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(session({
-    secret: "Our little secret.",
+    secret: "Our little secret.", //temporary secret - will be changed to env variable in the near future.
     resave: false,
     saveUninitialized: false
 }));
